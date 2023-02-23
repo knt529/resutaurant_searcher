@@ -1,2 +1,2 @@
-# resutaurant_search
+# restaurant_search
 レストラン検索アプリ
