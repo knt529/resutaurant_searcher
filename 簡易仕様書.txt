@@ -11,6 +11,7 @@ Microsoft Edge バージョン 110.0.1587.57 (公式ビルド) (64 ビット)
 
 ### 開発環境
 WordPress
+local by flywheel
 
 ### 開発言語
 JavaScript
