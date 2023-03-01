@@ -1,0 +1,365 @@
+.front {
+  width: 85%;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 10vw;
+  padding-bottom: 5vw;
+}
+
+@media screen and (min-width: 1367px) {
+  .front {
+    margin-top: 150px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .front {
+    width: 90%;
+    margin-top: 85px;
+    padding-bottom: 50px;
+  }
+}
+
+/* 検索条件 */
+.conditions {
+  margin: auto;
+  margin-bottom: 4vw;
+  color: #000;
+}
+.conditions .box {
+  width: 75%;
+  max-width: calc(1366px - 40%);
+}
+.conditions .ttl h3 {
+  font-size: 2vw;
+  font-family: initial;
+  line-height: 1;
+  background: #e8e8e8;
+  border: 1px solid #c2c2c2;
+  padding: 0.5em 1.5em;
+  padding-top: 0.7em;
+  letter-spacing: 0.1em;
+}
+.conditions form {
+  display: flex;
+  align-items: flex-end;
+}
+.conditions .content {
+  border: 1px solid #c2c2c2;
+  border-top: none;
+  padding: 3vw 4vw;
+}
+.conditions .content .location_btn{
+  font-size: 1.4vw;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0.4em;
+  cursor: pointer;
+}
+.conditions .content .flex {
+  align-items: flex-end;
+}
+.conditions .content .item {
+  width: calc(80% / 2);
+  margin-bottom: 0;
+}
+.conditions .content .item p{
+  font-size: 1.8vw;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+}
+.conditions .content .item input{
+  width: 100%;
+  font-size: 1.6vw;
+  padding: 0.658em;
+  border: 1px solid rgb(118, 118, 118);
+  border-right: none;
+  border-radius: 0;
+}
+.conditions .content .item select {
+  width: 100%;
+  font-size: 1.6vw;
+  padding: 0.6em;
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 0;
+}
+.conditions .content .item:first-child select {
+  border-right: none;
+}
+.conditions .content .search_btn {
+  width: 20%;
+}
+.conditions .content .search_btn:hover {
+  background: #fff;
+}
+.conditions .content .search_btn button{
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  width: 100%;
+  padding: 0.4em;
+  margin-left: 0.2em;
+  font-size: 1.6vw;
+}
+
+@media screen and (min-width: 1367px) {
+  .conditions {
+    margin-bottom: 50px;
+  }
+  .conditions .ttl h3 {
+    font-size: 22px;
+  }
+  .conditions .content {
+    padding: 50px 60px;
+  }
+  .conditions .content .location_btn{
+    font-size: 16px;
+  }
+  .conditions .content .item p{
+    font-size: 18px;
+  }
+  .conditions .content .item input {
+    font-size: 20px;
+    padding: 0.638em;
+  }
+  .conditions .content .item select  {
+    font-size: 20px;
+  }
+  .conditions .content .search_btn button {
+    font-size: 20px;
+    padding: 0.38em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .conditions {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+  .conditions .box {
+    width: 100%;
+  }
+  .conditions .ttl h3 {
+    font-size: 18px;
+  }
+  .conditions form {
+    display: block;
+  }
+  .conditions .content {
+    padding: 18px 16px;
+  }
+  .conditions .content .location_btn {
+    font-size: 14px;
+    margin-bottom: 0.5em;
+    padding: 0.2em 0.4em;
+  }
+  .conditions .content .item {
+    width: 90%;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .conditions .content .item p {
+    font-size: 14px;
+  }
+  .conditions .content .item input{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    border-right: 1px solid rgb(118, 118, 118);
+    padding: 0.3em 0.5em;
+  }
+  .conditions .content .item select {
+    font-size: 16px;
+    padding: 0.3em 0.5em;
+  }
+  .conditions .content .item:first-child select {
+    border-right: 1px solid rgb(118, 118, 118);
+  }
+  .conditions .content .item select input, .conditions .content .item select select {
+    width: 100%;
+    font-size: 16px;
+    padding: 0.1em 0.4em;
+  }
+  .conditions .content .search_btn {
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .conditions .content .search_btn button {
+    font-size: 15px;
+    padding: 0.2em 0.5em;
+  }
+}
+
+
+/* 結果一覧 */
+.result {
+  margin: auto;
+  color: #000;
+}
+.result .ttl h3 {
+  font-size: 2vw;
+  font-family: initial;
+  line-height: 1;
+  background: #e8e8e8;
+  border: 1px solid #c2c2c2;
+  padding: 0.5em 1.5em;
+  padding-top: 0.7em;
+  letter-spacing: 0.1em;
+}
+.result .box {
+  border: 1px solid #c2c2c2;
+  border-top: none;
+  padding-top: 2vw;
+}
+.result .number {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+}
+.result .number p{
+  font-size: 1.5vw;
+  line-height: 1.6;
+  padding-bottom: 2vw;
+}
+.result .result_content .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6vw;
+  width: 90%;
+  max-width: 1150px;
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 2vw 0;
+  margin: auto;
+  margin-bottom: 2vw;
+}
+.result .result_content .item .left-img {
+  width: 20vw;
+  max-width: 280px;
+  height: 20vw;
+  max-height: 280px;
+  text-align: center;
+}
+.result .result_content .item .left-img a:hover{
+  opacity: 0.8;
+}
+.result .result_content .item .left-img img{
+  width: auto;
+  height: 100%;
+}
+.result .result_content .item .right {
+  width: 60%;
+}
+.result .result_content .item .right ul {
+  padding-top: 2vw;
+}
+.result .result_content .item .right ul li{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.6vw;
+  margin-bottom: 2vw;
+}
+.result .result_content .item .right ul li p {
+  font-size: 1.6vw;
+  line-height: 1.5;
+}
+.result .result_content .right ul li .value {
+  width: 80%;
+  text-align: justify;
+}
+.result .result_content .item .right ul li p.key {
+  width: 20%;
+}
+.result .result_content .item .right ul li a {
+  position: relative;
+  font-size: 1.65vw;
+}
+.result .result_content .item .right ul li a:hover {
+  text-decoration: underline dashed #000;
+}
+
+@media screen and (min-width: 1367px) {
+  .result .ttl h3 {
+    font-size: 22px;
+  }
+  .result .box {
+    padding-top: 25px;
+  }
+  .result .number p {
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+  .result .result_content .item {
+    gap: 70px;
+    padding: 30px 15px;
+    margin-bottom: 25px;
+  }
+  .result .result_content .item .right ul {
+    padding-top: 16px;
+  }
+  .result .result_content .item .right ul li {
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .result .result_content .item .right ul li p {
+    font-size: 18px;
+  }
+  .result .result_content .item .right ul li a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .result .ttl h3 {
+    font-size: 18px;
+  }
+  .result .box {
+    padding-top: 16px;
+  }
+  .result .number p {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+  .result .number {
+    padding: 12px auto;
+  }
+  .conditions .content .flex {
+    display: block;
+  }
+  .result .result_content .item {
+    display: block;
+    padding: 16px 10px;
+    margin-bottom: 16px;
+  }
+  .result .result_content .item .left-img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+  .result .result_content .item .right {
+    width: 100%;
+  }
+  .result .result_content .item .right ul {
+    padding-top: 16px;
+  }
+  .result .result_content .item .item .right ul li {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .result .result_content .item .right ul li p {
+    font-size: 15px;
+  }
+  .result .result_content .item .right ul li a {
+    font-size: 15px;
+  }
+  .result .result_content .item .right ul li p.key {
+    width: 30%;
+  }
+  .result .result_content .item .right ul li .value {
+    width: 70%;
+  }
+}
+
